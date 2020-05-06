@@ -3209,6 +3209,7 @@ section.lazy-placeholder:after {
 }
 .cid-rXXUsY4BYq .mbr-content-text {
   color: #767676;
+  text-align: left;
 }
 .cid-rXXUsY4BYq .card {
   word-wrap: break-word;
@@ -3256,6 +3257,9 @@ section.lazy-placeholder:after {
     padding-left: 0;
     padding-bottom: 2rem;
   }
+}
+.cid-rXXUsY4BYq H4 {
+  text-align: left;
 }
 .cid-rY0INML415 {
   padding-top: 90px;
