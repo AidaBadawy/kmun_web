@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 		// Get the template in order (Mobirise puts an actual template in there)
-		$template = "Hi,<br><br>You have received a new message from your website.<br><br>{formdata}<br><br>Date: {date}<br>Remote IP: {ip}<br><br>Have a nice day.";
+		$template = "Hi,<br><br>You have received a new message from your KMUN Website.<br><br>{formdata}<br><br>Date: {date}<br>Remote IP: {ip}<br><br>Have a nice day.";
 
 		// Extract all variables from the template
 		preg_match_all("/\{([a-zA-Z0-9_-]+)\}/", $template, $matches);
@@ -93,11 +93,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$body = "<html><body>" . $template . "</body></html>";
 
 		// Sender as From Email or predefined From Email
-		$from = ("0" == "1" ? $_POST["email"] : "aidarusbadawy@gmail.com");
+		$from = ("1" == "1" ? $_POST["email"] : "aidarusbadawy@gmail.com");
 
 		// Sender as From Name or predefined From Name
 		$fromName = "";
-		if ("0" == "1") {
+		if ("1" == "1") {
 			$fromName = "{name}";
 
 			// Extract variable names from the name field
